@@ -1,4 +1,8 @@
 import discord
+import os
+
+load_dotenv()
+TOKEN = os.getenv('BOT_TOKEN')
 
 client = discord.Client()
 
@@ -13,4 +17,4 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         await message.channel.send('Kono aida @here')
 
-client.run('ODQ2NzE0MDMwNzM1MjI4OTY4.YKzh5A.VDYg8lQckA1TobHrwjlox-98lP'+'Y')
+client.run(TOKEN)

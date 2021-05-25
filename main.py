@@ -5,7 +5,6 @@ import sys
 
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
-print(TOKEN)
 client = discord.Client()
 
 @client.event

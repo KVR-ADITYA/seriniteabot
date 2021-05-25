@@ -43,3 +43,5 @@ jobs:
           echo test, and deploy your project.
           pip install discord
           python main.py
+        env: # Or as an environment variable
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}

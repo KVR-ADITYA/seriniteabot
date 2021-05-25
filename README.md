@@ -1,1 +1,1 @@
-"# seriniteabot" 
+# seriniteabot

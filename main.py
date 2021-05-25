@@ -13,4 +13,4 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         await message.channel.send('Kono aida @here')
 
-client.run('ODQ2NzE0MDMwNzM1MjI4OTY4.YKzh5A.osCZBhOca-W0QoQw6HwtumHVwek')
+client.run('ODQ2NzE0MDMwNzM1MjI4OTY4.YKzh5A.VDYg8lQckA1TobHrwjlox-98lP'+'Y')

@@ -42,6 +42,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           pip install discord
+          pip install python-dotenv
           python main.py
         env: # Or as an environment variable
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}

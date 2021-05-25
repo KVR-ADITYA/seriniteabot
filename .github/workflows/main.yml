@@ -41,6 +41,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo $BOT_TOKEN
           pip install discord
           pip install python-dotenv
           python main.py

@@ -34,4 +34,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          pip install discord
           python main.py

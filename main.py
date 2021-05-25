@@ -17,5 +17,7 @@ async def on_message(message):
         return
     if message.content.startswith('!hello'):
         await message.channel.send('Kono aida @here')
+        await channel.send(file=discord.File('./images/angly_tubby.png'))
+
 
 client.run(TOKEN)

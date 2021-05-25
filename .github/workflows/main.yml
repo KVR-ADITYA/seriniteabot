@@ -29,11 +29,11 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Hello world action
-        with: # Set the secret as an input
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        env: # Or as an environment variable
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+#       - name: Hello world action
+#         with: # Set the secret as an input
+#           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+#         env: # Or as an environment variable
+#           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
 
       # Runs a set of commands using the runners shell

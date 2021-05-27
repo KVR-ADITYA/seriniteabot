@@ -16,7 +16,7 @@ async def on_message(message):
     if message.author ==  client.user:
         return
     if message.content.startswith('!hello'):
-        await message.channel.send('Kono aida @here')
+        await message.channel.send('Kono aida :angy_tubby')
         await channel.send(file=discord.File('./images/angly_tubby.png'))
 
 

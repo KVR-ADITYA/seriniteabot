@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 from discord.ext import commands
 import sys
 from feature import pong
+from feature import reminder
+from datetime import datetime
+
 
 print(pong.Pong.pong(1000))
 
@@ -18,6 +21,11 @@ async def on_ready():
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    if current_time >= '6:00:00' and current_time <= '12:00:00':
+        channel = bot.get_channel(832301277119119361)
+        await channel.send(reminder.Reminder.remind())
     print('------')
 
 @bot.command()
@@ -34,3 +42,4 @@ async def ping(ctx):
     await ctx.send(pong.Pong.pong(int(bot.latency)))
 
 bot.run(TOKEN)
+#bot.run("ODQ2NzE0MDMwNzM1MjI4OTY4.YKzh5A.VDYg8lQckA1TobHrwjlox-98lP"+"Y")

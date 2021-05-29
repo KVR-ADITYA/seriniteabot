@@ -3,7 +3,8 @@ Angry Tubby?
 <p align="center">
   <img src="./images/angly_tubby.png" width="350" title="angry tubby?">
 </p>
-## How it works
+
+# How it works
 There are 2 main files in this repository: `main.py` and `main.yml`.
 The `main.py` file contains the logic of the bot and the `main.yml` contains instructions to setup the CI pipeline for github.
 The `main.yml` is based on the standard template provided by GitHub.

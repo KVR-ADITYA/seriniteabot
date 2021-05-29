@@ -23,6 +23,6 @@ async def on_message(message):
 
 @bot.command(aliases = ['Ping','PING'])
 async def ping(ctx):
-    await ctx.send(ping.Ping.ping(bot.latency))
+    await ctx.send(ping.Ping.ping(int(bot.latency)))
 
 bot.run(TOKEN)

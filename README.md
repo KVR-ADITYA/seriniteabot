@@ -4,7 +4,13 @@ Angry Tubby?
   <img src="./images/angly_tubby.png" width="350" title="angry tubby?">
 </p>
 
-# How it works
+## General Instructions
+If you want to code a new feature for this bot, create a `.py` file in `feature` folder.
+Import the file in `main.py` and then create a command for the bot!
+
+Note: In `discord.py` overriding the default provided `on_message` forbids any extra commands from running. To fix this, add a bot.process_commands(message) line at the end of your `on_message`. I would recommend not to use this as commands can satisfy most of your needs
+
+## How it works
 There are 2 main files in this repository: `main.py` and `main.yml`.
 The `main.py` file contains the logic of the bot and the `main.yml` contains instructions to setup the CI pipeline for github.
 The `main.yml` is based on the standard template provided by GitHub.

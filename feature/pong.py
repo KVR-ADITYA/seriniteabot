@@ -1,6 +1,6 @@
 import sys
 import os
 
-class Ping():
-    def ping(latency):
+class Pong():
+    def pong(latency):
         return f'Ping is {round((latency)*1000)}ms'

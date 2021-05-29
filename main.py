@@ -42,4 +42,3 @@ async def ping(ctx):
     await ctx.send(pong.Pong.pong(int(bot.latency)))
 
 bot.run(TOKEN)
-#bot.run("ODQ2NzE0MDMwNzM1MjI4OTY4.YKzh5A.VDYg8lQckA1TobHrwjlox-98lP"+"Y")

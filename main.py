@@ -23,7 +23,7 @@ async def on_ready():
     print(bot.user.id)
     now = datetime.utcnow()
     current_time = now.strftime("%H:%M:%S")
-    if current_time >= '1:30:00' and current_time <= '7:30:00':
+    if current_time >= '01:30:00' and current_time <= '07:30:00':
         channel = bot.get_channel(832301277119119361)
         await channel.send(reminder.Reminder.remind())
     print('------')

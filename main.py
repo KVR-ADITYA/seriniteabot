@@ -25,7 +25,7 @@ async def on_ready():
     current_time = now.strftime("%H:%M:%S")
     if current_time >= '01:30:00' and current_time <= '07:30:00':
         channel = bot.get_channel(832301277119119361)
-        await channel.send(reminder.Reminder.remind())
+        await channel.send(reminder.Reminder.remind(),delete_after=72000)
     print('------')
 
 @bot.command()

@@ -22,12 +22,12 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     now = datetime.utcnow()
-    daybefore = now - timedelta(days=1)
+    hours_20 = now - timedelta(hours = 20)
     current_time = now.strftime("%H:%M:%S")
     if current_time >= '01:30:00' and current_time <= '07:30:00':
         channel = bot.get_channel(832301277119119361)
         rem = reminder.Reminder.remind()
-        async for message in channel.history(limit=200,before=daybefore):
+        async for message in channel.history(limit=200,before=hours_20):
             if message.content == rem:
                 await message.delete()
         await channel.send(rem)
